@@ -5,14 +5,15 @@ import React from 'react'
 import {
   BlockQuote,
   Cite,
-  Quote
+  Quote,
+  Slide
 } from 'spectacle'
 
-export default () => (
-  <div>
+export default (
+  <Slide transition={['fade']} bgColor='secondary' textColor='primary'>
     <BlockQuote>
       <Quote>Example Quote</Quote>
       <Cite>Author</Cite>
     </BlockQuote>
-  </div>
+  </Slide>
 )

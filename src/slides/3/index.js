@@ -5,11 +5,12 @@ import React from 'react'
 import {
   Heading,
   ListItem,
-  List
+  List,
+  Slide
 } from 'spectacle'
 
-export default () => (
-  <div>
+export default (
+  <Slide transition={['fade']} bgColor='primary' textColor='tertiary'>
     <Heading size={6} textColor='secondary' caps>
       Standard List
     </Heading>
@@ -19,5 +20,5 @@ export default () => (
       <ListItem>Item 3</ListItem>
       <ListItem>Item 4</ListItem>
     </List>
-  </div>
+  </Slide>
 )

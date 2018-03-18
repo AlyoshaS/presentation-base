@@ -2,10 +2,7 @@
 import React from 'react'
 
 // Import Spectacle Core tags
-import {
-  Deck,
-  Slide
-} from 'spectacle'
+import { Deck } from 'spectacle'
 
 // Import theme
 import theme from './theme'
@@ -25,22 +22,10 @@ export default class Presentation extends React.Component {
         transitionDuration={500}
         theme={theme}
       >
-        <Slide transition={['fade-out', 'zoom']} bgColor='primary'>
-          <Slide1 />
-        </Slide>
-
-        <Slide transition={['fade']} bgColor='tertiary'>
-          <Slide2 />
-        </Slide>
-
-        <Slide transition={['fade']} bgColor='primary' textColor='tertiary'>
-          <Slide3 />
-        </Slide>
-
-        <Slide transition={['fade']} bgColor='secondary' textColor='primary'>
-          <Slide4 />
-        </Slide>
-
+        {Slide1}
+        {Slide2}
+        {Slide3}
+        {Slide4}
       </Deck>
     )
   }
